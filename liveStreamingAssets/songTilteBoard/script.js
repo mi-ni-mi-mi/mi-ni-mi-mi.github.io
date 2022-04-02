@@ -92,7 +92,7 @@ function setText(e) {
 
     if (e.target.checked) { // チェックが入れられたら値をセットする
         const n = 5; // 上下それぞれ、n回の紙めくり
-        const x = divHeight / 4; // 1回の紙めくりのフレーム数はx
+        const x = divHeight / 2; // 1回の紙めくりのフレーム数はx
         const dt = 10;
         let cnt = 0;
         const timer = setInterval(() => {
