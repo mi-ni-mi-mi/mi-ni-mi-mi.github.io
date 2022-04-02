@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.div1 {
+    margin: 64;
+    font-size: 20px;
+}
+
+.div2 {
+    margin: 32;
+    font-size: 18px;
+}
+
+.div3 {
+    margin: 16;
+    font-size: 16px;
+}
+
+.div4 {
+    margin: 8;
+    font-size: 14px;
+}

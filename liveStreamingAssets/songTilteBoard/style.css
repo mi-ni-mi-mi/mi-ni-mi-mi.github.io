@@ -1,0 +1,133 @@
+:root {
+    --vheight: 24px;
+    --bheight: 1px;
+    --vwidth: 24px;
+}
+
+* {
+    background-color: #333333;
+    text-align: center;
+    font-size: calc(var(--vheight) * 0.7);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.fs1 {
+    font-size: calc(var(--vheight) * 0.85);
+}
+
+.fs2 {
+    font-size: calc(var(--vheight) * 0.7);
+}
+
+.orange {
+    color: yellow;
+    text-shadow: 0 0 5px orange;
+}
+
+#flex {
+    display: flex;
+}
+
+input,
+textarea {
+    border: none;
+    width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 0.5;
+}
+
+::placeholder {
+    color: #555555;
+}
+
+table {
+    margin: 10px;
+    background-color: #444444;
+}
+
+th,
+td {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+
+.cr1 {
+    background-color: #404040;
+}
+
+.cr2 {
+    background-color: #444444;
+}
+
+.line {
+    border: var(--bheight) #666666 solid;
+}
+
+.wh1 {
+    /* ヘッダーの１列目の幅 */
+    width: calc(var(--vwidth) * 2);
+    max-width: calc(var(--vwidth) * 2);
+}
+
+.wh2 {
+    /* １列目と２列目の幅 */
+    width: var(--vwidth);
+}
+
+.ht1 {
+    /* ヘッダーの高さ */
+    height: calc(var(--vheight) * 2);
+    min-height: calc(var(--vheight) * 2);
+}
+
+.ht2 {
+    /* 上下に分割された箇所の高さ */
+    height: var(--vheight);
+    line-height: var(--vheight);
+}
+
+.ht3 {
+    /* 上下に分割されていない箇所の高さ */
+    height: calc(var(--vheight) * 2 + var(--bheight) * 2);
+    line-height: calc(var(--vheight) * 2 + var(--bheight) * 2);
+}
+
+.parent {
+    position: relative;
+}
+
+.text1,
+.text2,
+.text3 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.cover1,
+.cover2 {
+    position: absolute;
+    top: var(--vheight);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.cover3 {
+    position: absolute;
+    top: calc(var(--vheight) * 2 + var(--bheight) * 2);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}

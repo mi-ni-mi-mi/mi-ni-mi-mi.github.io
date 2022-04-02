@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="parameter">
+        <div>
+            <div>円のサイズ</div>
+            <input id="inputSize" type="range" min="1" max="9" step="1" value="5">
+            <span id="spanSize">5</span>
+        </div>
+        <div>
+            <div>円の収縮する速さ</div>
+            <input id="inputSpeed1" type="range" min="1" max="9" step="1" value="5">
+            <span id="spanSpeed1">5</span>
+        </div>
+        <div>
+            <div>円の閉塞する速さ</div>
+            <input id="inputSpeed2" type="range" min="1" max="9" step="1" value="5">
+            <span id="spanSpeed2">5</span>
+        </div>
+        <div>
+            <span>全画面表示（F11キー）</span>
+        </div>
+        <div>
+            <a href="javascript:showSetting()">設定非表示</a>
+            <span>（Sキー）</span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
